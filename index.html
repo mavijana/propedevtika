@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propedeutika Psihologije / Psychology Propaedeutics</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-title">
+        <h1 data-label="title">Propedeutika Psihologije</h1>
+        <p class="subtitle" data-label="subtitle">Psychology Propaedeutics</p>
+      </div>
+      <div class="header-controls">
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button id="language-toggle" class="language-toggle" aria-label="Toggle language">SR</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <nav class="sidebar-nav">
+        <h2 data-label="subjects">Subjects</h2>
+        <div id="subjects-list" class="subjects-list"></div>
+      </nav>
+      <footer class="sidebar-footer">
+        <p data-label="credits">© 2024 Psychology Propaedeutics. All rights reserved.</p>
+      </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+      <section class="content-section">
+        <!-- Subject Header -->
+        <div class="subject-header"></div>
+
+        <!-- Tabs -->
+        <nav class="tab-navigation">
+          <button class="tab-button active" data-tab="topics" data-label="topics">Topics</button>
+          <button class="tab-button" data-tab="experiments" data-label="experiments">Experiments</button>
+          <button class="tab-button" data-tab="tests" data-label="tests">Tests</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tabs-container">
+          <!-- Topics Tab -->
+          <div id="topics-content" class="tab-content active">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Experiments Tab -->
+          <div id="experiments-content" class="tab-content">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Tests Tab -->
+          <div id="tests-content" class="tab-content">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
